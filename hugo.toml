@@ -1,4 +1,11 @@
 baseURL = 'https://sho0pi.github.io/travel/'
 languageCode = 'en-us'
 title = 'My travel blog'
-theme = "hugo-book"
+theme = "ananke"
+
+
+tableOfContents = true
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'
