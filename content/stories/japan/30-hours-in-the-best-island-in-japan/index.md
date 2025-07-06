@@ -111,7 +111,84 @@ have been the same without him!
 {{< tip >}} Most places in Kumejima close super early — like, 7PM early. Always
 have backup snacks, or make a friend who owns a bar. {{< /tip >}}
 
-#### Where we stayed
+### Kumejima Adventure Continue: The Next Day
+
+We set the goal already at the beginning of the day: **"Today we will swim with
+the turtles."** Let me tell you right away - we failed our mission. Again. But
+we saw something _way_ crazier!
+
+Kairi told us you can sometimes spot turtles on the southeast part of the second
+island, so we decided to hitchhike again. This time, I think we made one of my
+dreams come true - **we hitchhiked in the back of a truck!** One of those mini
+Japanese trucks you only see in rural Japan or in the movies. Not the most
+comfortable ride, but honestly... it was amazing. The wind in your face, ocean
+views all around - we couldn't ask for a better experience.
+
+{{<img src="truck.jpg" caption="Amazing experience">}}
+
+The driver dropped us off at the abandoned Kumejima Museum (guess we were
+traveling in the off-season), and we started walking east along the coastline.
+We tried to jump into the water a couple of times, but the waves were too
+strong - felt unsafe - so we decided to just keep walking all the way to our
+favorite turtle-spotting area.
+
+At the eastern edge of the island, you can _literally_ see the water current
+rushing between the second and third islands. For safety, we decided to snorkel
+close to shore.
+
+We jumped into the water, and not even 5 meters from the shore we saw this
+sudden drop in the ocean floor - and there it was: **a beautiful coral reef**.
+So many kinds of fish - cleaning fish, batfish, parrotfish, and others I have no
+idea how to name. We hung around the reef for a while, and every time the
+current pushed us away, we swam back. Not the safest thing we've ever done...
+but also not the worst :)
+
+We kept going, trying to spot turtles again - still no luck. We could see their
+heads popping above the water, but every time we tried to swim near them, they
+sped off. Still, the water was amazing, and the spot was peaceful.
+
+Once the low tide started again, we decided to swim back toward the reef - our
+starting point. And then we saw it. **A sea snake.** One of the most venomous
+animals on this planet.
+
+I completely panicked (for no legit reason) and started pushing both me and my
+girlfriend back to shore. She said she's never seen me swim that fast in her
+life. I really don't know what happened to me - I'm usually super calm. Maybe it
+was the current, maybe it was the long snorkel session. Maybe just my brain
+bugging out.
+
+Still - it was an amazing experience. Once we were back on shore, I even jumped
+back in one last time to explore the reef a bit more. I wish we had more time to
+fully explore it... but we had to head back to the airport for our flight back
+to the Okinawa main island.
+
+{{<img src="beach2.jpg" caption="The coastlines between two of the small islands in Kume">}}
+
+### Our Hidden Gems list
+
+- 🍦
+  [Kumejimaru Cafe (くめじまーるカフェ)](https://maps.app.goo.gl/JGNr577QPJM2upbe9) -
+  Salted ice cream in a giant cone. must try!
+- 🏪 [FamilyMart](https://maps.app.goo.gl/fj6jyqhX7P8m3fXEA) - The place that
+  saved our lives many times – be aware: closes at 11PM.
+- 🍜 [Namiji resturant](https://maps.app.goo.gl/mLBgT86jMnRHBoLh6) - Great place
+  to try local Kume meal.
+- 🍻 [Bar Cheers](https://maps.app.goo.gl/wkaYX9maJ1QZ4w97A) - The Best ~~and
+  only~~ bar in Kume! (shout out to our friend
+  [@Kairi](https://www.instagram.com/9_kairi_kyrie_9/)
+- **🏖️ Beaches:**
+  - 🌊 [Eef Beach](https://maps.app.goo.gl/qcjAje61gXbxXvU6A) - Amazing views
+    and the best place to bath around.
+  - 🐢 [Our sea turtles spot](https://maps.app.goo.gl/d48iN6VafhKGpHWX7) - Be
+    aware of high/low tide and check the timetable.
+  - 🪸
+    [The crazy coral reef we found](https://maps.app.goo.gl/rUkS3EDdhrvELZGq6) -
+    You can go there by foot from the sea turtles place or by just walking
+    around the island (like we did).
+  > Full beach guide coming soon:
+  > [Best Beaches in Kumejima](/guides/japan/best-beaches-in-kumejima)
+
+##### Where we stayed
 
 - We stayed in: **Bears Stay Kumejima Eef Beach**
   - Very close to the Family Mart + Local resturant & bar
@@ -119,5 +196,3 @@ have backup snacks, or make a friend who owns a bar. {{< /tip >}}
   - No reception. all the check-in happend in front of a machine, so you cannot
     check in early
   - The cleaning lady was very nice and she gave us extra towels for the beach!
-
-{{<img src="beach2.jpg" caption="The coast lines between 2 of the small islands in Kume">}}
