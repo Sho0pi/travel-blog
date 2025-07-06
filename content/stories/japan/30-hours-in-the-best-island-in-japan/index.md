@@ -160,6 +160,20 @@ to the Okinawa main island.
 
 {{<img src="beach2.jpg" caption="The coastlines between two of the small islands in Kume">}}
 
+### Final Thoughts from Kume
+
+We honestly loved every second of being in Kume. Our 1.5 days were definitely
+not enough - I wish we had at least 2 more days to explore the island properly.
+Maybe even go SUP paddling with Kairi like we talked about.
+
+This island just felt different. We met some of the nicest people we've ever met
+in Japan, and the vibe overall was super welcoming and laid-back. Great weather,
+and honestly - one of the nicest beaches I've ever been to in my life.
+
+If you're ever in Okinawa and wondering if it's worth the detour - it is. The
+island isn't too touristic, so you can have most of the beaches to yourself.
+Definitely take advantage of that. 😉
+
 ### Our Hidden Gems list
 
 - 🍦
