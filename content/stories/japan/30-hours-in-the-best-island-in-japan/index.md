@@ -17,32 +17,28 @@ categories:
 
 Me and my girlfriend spent about 4 days in Okinawa as a quick getaway trip.
 During that time, I decided to book a flight to this super tiny island called
-Kumejima (久米島町), located just a 30-minute flight - or a 4-hour boat ride
-from the main island. We only had 30 hours there, but it was the best decision
-we made on this whole trip!
+**Kumejima (久米島町)** - just a 30-minute flight (or a 4-hour boat ride) from
+the main island. We only had 30 hours there, but honestly, it was the best
+decision we made on this whole trip!
 
 {{<img src="plane.jpg" caption="Our tiny 40-seater airplane" >}}
 
-So we arrived to Kumejima very early in about 11 am and we had some time till
-our hotel check-in - we really didn't know what to expect. We brought our
-snorkeling masks from home and hope for the best!
+We landed in Kumejima pretty early, around 11AM, and had a few hours to kill
+before hotel check-in - and to be honest, we really didn't know what to expect.
+We brought our snorkel masks from home and just hoped for the best.
 
-Acording to the internet there are only 2 bus lines on the island, We so only 1
-and he is not very frequent (once every 2 hours). but we also saw 2 taxis there
-waiting to pick people from the airport. Hahahah
+According to the internet, there are only two bus lines on the island... We only
+saw one — and it comes every two hours. There were also just two taxis waiting
+at the airport. _Hahaha._
 
-When we arrived we tought maybe we should try to hitchhike, i have some
-experience [doing it](/travel/404) and my girlfriend really wanted to try.
+When we arrived, we thought: **maybe we should try to hitchhike?** I've done it
+a few times before ([like here](/travel/404)) and my girlfriend really wanted to
+give it a try.
 
-And let me tell you! This was great success! In our 30 hours there we hitchhiked
-with 6 different people
+And let me tell you - **it was a great success.** In just 30 hours, we managed
+to hitchhike with 6 different people!
 
-{{<img src="first-hitchike.jpg"
-caption="First hitchike with marine bioligist that was in our flight">}}
-
-We went to many different beaches there and try to snorkel arround, we went in a
-bit of a windy wethear so the water was not as clean but we still managed to see
-many different kinds of fish
+{{<img src="first-hitchike.jpg" caption="First hitchhike - with a marine biologist who was on our flight">}}
 
 ### Snorkeling in Paradise
 
