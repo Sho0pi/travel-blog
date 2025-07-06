@@ -88,11 +88,28 @@ We spent the next two hours walking around in the water, trying to get close to
 the turtles without scaring them off. But every time they noticed us, they
 zoomed away - I had no idea turtles could swim that fast.
 
+{{<img src="beach1.jpg" caption="The beach across the road from our hotel">}}
+
 After that, we were completely dead. We hitchhiked back with a Japanese guy who
 didn't know a single word of English, but he somehow dropped us off exactly at
 our hotel. Called it a day.
 
-{{<img src="beach1.jpg" caption="The beach across the road from our hotel">}}
+Well... kind of.
+
+Later that night we woke up starving - but turns out **almost everything on the
+island closes ridiculously early**. I'm talking 7PM and you’re out of luck.
+Thank god for Family Mart again. We grabbed whatever snacks we could find, and
+then remembered: **Kairi**, the guy who gave us a ride earlier, had told us he
+owns one of the [only bars in Kume](https://maps.app.goo.gl/jow1sUtRTk8AD8KJA),
+so we decided to check it out.
+
+We headed over and ended up spending the night hanging out with him and his
+**local basketball team** - just drinking, chatting, and laughing through a mix
+of broken Japanese and random Google Translates. Our Kume experience wouldn’t
+have been the same without him!
+
+{{< tip >}} Most places in Kumejima close super early — like, 7PM early. Always
+have backup snacks, or make a friend who owns a bar. {{< /tip >}}
 
 #### Where we stayed
 
