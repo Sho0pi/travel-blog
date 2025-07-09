@@ -1,11 +1,250 @@
+
+
 baseURL = 'https://sho0pi.github.io/travel/'
-languageCode = 'en-us'
-title = 'My travel blog'
-theme = "ananke"
+
+# theme = "ananke"
+theme = "LoveIt"
+
+title = "Sho0pi Around the World"
+
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "en"
+# language name ["English", "简体中文", "Français", "Polski", ...]
+languageName = "English"
 
 
-tableOfContents = false
+
+# copyright description used only for seo schema
+copyright = ""
+
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+
+# ignore some build errors
+# ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+# Pagination config
+# [pagination]
+#   disableAliases = false
+#   pagerSize = 10
+#   path = "page"
+
+# Menu config
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "stories"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Stories"
+    url = "/stories/"
+    # title will be shown when you hover on this menu link
+    title = "My amazing Stories"
+  [[menu.main]]
+    weight = 2
+    identifier = "guides"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Guides"
+    url = "/guides/"
+    # title will be shown when you hover on this menu link
+    title = "My Travel Guides"
+  [[menu.main]]
+    weight = 3
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 4
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+
+
+[params]
+  # site default theme ["auto", "light", "dark"]
+  defaultTheme = "light"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = ""
+  # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+  # ["sha256", "sha384", "sha512", "md5"]
+  fingerprint = ""
+  # LoveIt NEW | 0.2.0 date format
+  dateFormat = "2006-01-02"
+  # website title for Open Graph and Twitter Cards
+  title = "Sho0pi around the world"
+  # website description for RSS, SEO, Open Graph and Twitter Cards
+  description = "Crazy stories and guides from all corners of the planet"
+  # website images for Open Graph and Twitter Cards
+  # images = ["/logo.png"]
+
+  # Author config
+  [params.author]
+    name = "Sho0pi"
+    email = ""
+    link = "http://github.com/Sho0pi"
+
+  # Header config
+  [params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # mobile header mode ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # LoveIt NEW | 0.2.0 Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = ""
+      # title name
+      name = "Sho0pi Around the World"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
+      typeit = false
+
+  # Footer config
+  [params.footer]
+    enable = true
+    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+    custom = ''
+    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+    hugo = false
+    # LoveIt NEW | 0.2.0 whether to show copyright info
+    copyright = true
+    # LoveIt NEW | 0.2.0 whether to show the author
+    author = true
+    # Site creation time
+    since = 2025
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  # LoveIt NEW | 0.2.0 Section (all posts) page config
+  [params.section]
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
+
+  # LoveIt NEW | 0.2.0 List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
+
+  # LoveIt NEW | 0.2.0 Search config
+  [params.search]
+    enable = true
+    # type of search engine ["lunr", "algolia"]
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # LoveIt NEW | 0.2.1 max number of results length
+    maxResultLength = 10
+    # LoveIt NEW | 0.2.3 snippet length of the result
+    snippetLength = 30
+    # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
+    highlightTag = "em"
+    # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+
+  # Home page config
+  [params.home]
+    # LoveIt NEW | 0.2.0 amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      # enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = "/images/avatar.png"
+      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "Crazy stories and guides from all corners of the planet"
+
+      # whether to use typeit animation for subtitle
+      typeit = false
+      # whether to show social links
+      social = true
+      # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+      disclaimer = "this is really bead"
+    # Home page posts
+
+    [params.home.stories]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      # # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
+      # # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
+
+  [params.social]
+    GitHub = "Sho0pi"
+    Instagram = "itay.png"
+    Linkedin = "sho0pi"
+    RSS = true
+
+
+# Options to make hugo output files
+[outputs]
+  # LoveIt CHANGED | 0.2.0
+  home = ["HTML", "RSS", "JSON"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [[module.mounts]]
 source = 'images'
 target = 'static/images'
+
+
+
+# # Markup related configuration in Hugo
+# [markup]
+#   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+#   [markup.highlight]
+#     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+#     noClasses = false
