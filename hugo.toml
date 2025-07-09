@@ -230,7 +230,12 @@ enableEmoji = true
 
 
 
-
+[params.analytics]
+    # LoveIt DELETED | 0.3.1
+    enable = true
+    # Google Analytics
+    [params.analytics.google]
+      id = "G-HKVJHNJ0JD"
 
 
 
