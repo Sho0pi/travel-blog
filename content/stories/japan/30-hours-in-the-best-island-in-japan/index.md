@@ -24,7 +24,9 @@ During that time, I decided to book a flight to this super tiny island called
 the main island. We only had 30 hours there, but honestly, it was the best
 decision we made on this whole trip!
 
-{{<img src="plane.jpg" caption="Our tiny 40-seater airplane" >}}
+<!--more-->
+
+{{<image src="plane.jpg" caption="Our tiny 40-seater airplane" >}}
 
 We landed in Kumejima pretty early, around 11AM, and had a few hours to kill
 before hotel check-in - and to be honest, we really didn't know what to expect.
