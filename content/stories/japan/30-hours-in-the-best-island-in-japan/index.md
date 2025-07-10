@@ -1,8 +1,11 @@
 ---
 date: 2025-07-04T19:53:43+08:00
+lastmod: 2025-07-11T19:53:43+08:00
 title: '30 Hours in Kumejima - the Best Island in Japan'
 slug: "30-hours-in-kumejima"
-cover-image: cover.jpg
+resources:
+- name: "featured-image"
+  src: "cover.jpg"
 location: "Kumejima, Japan"
 travel_time: "30 hours"
 tags:
