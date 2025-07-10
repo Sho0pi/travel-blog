@@ -1,5 +1,8 @@
 baseURL = 'https://sho0pi.github.io/travel/'
 
+# This will make the URL in themes when accessing '/...' transform to 'baseURL/...'
+canonifyURLs = true
+
 # theme = "ananke"
 theme = "LoveIt"
 
@@ -67,7 +70,7 @@ enableEmoji = true
 
 [params]
   # site default theme ["auto", "light", "dark"]
-  defaultTheme = "light"
+  defaultTheme = "dartk"
   # public git repo url only then enableGitInfo is true
   gitRepo = ""
   # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
@@ -202,7 +205,7 @@ enableEmoji = true
       disclaimer = "this is really bad"
     # Home page posts
 
-    [params.home.stories]
+    [params.home.posts]
       enable = true
       # special amount of posts in each home posts page
       paginate = 6
@@ -216,11 +219,35 @@ enableEmoji = true
     Linkedin = "sho0pi"
     RSS = true
 
+  [params.page]
 [params.page.share]
       enable = true
       X = true 
       Threads = true 
       Facebook = false
+      Linkedin = false
+      Whatsapp = true
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = true
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Flipboard = false
+      Weibo = false
+      Blogger = false
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = false
+      Skype = false
+      Trello = false
+      Diaspora = false 
+      Mix = false
+      Telegram = false 
 
 
 
