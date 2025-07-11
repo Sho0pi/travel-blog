@@ -1,8 +1,8 @@
-+++
-date = '2025-07-08T14:30:54+08:00'
-draft = true
-title = 'WIP'
-+++
+---
+date: "2025-07-08T14:30:54+08:00"
+draft: true
+title: WIP
+---
 
 ## Ideas that are work in progress:
 

@@ -1,5 +1,5 @@
-+++
-title = 'Stories'
-+++
+---
+title: Stories
+---
 
 My crazy travel stories
