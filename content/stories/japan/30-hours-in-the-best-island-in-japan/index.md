@@ -37,8 +37,8 @@ saw one — and it comes every two hours. There were also just two taxis waiting
 at the airport. _Hahaha._
 
 When we arrived, we thought: **maybe we should try to hitchhike?** I've done it
-a few times before ([like here](/travel/404)) and my girlfriend really wanted to
-give it a try.
+a few times before ([like here]({{< relref "404">}})) and my girlfriend really
+wanted to give it a try.
 
 And let me tell you - **it was a great success.** In just 30 hours, we managed
 to hitchhike with 6 different people!
@@ -106,11 +106,15 @@ so we decided to check it out.
 
 We headed over and ended up spending the night hanging out with him and his
 **local basketball team** - just drinking, chatting, and laughing through a mix
-of broken Japanese and random Google Translates. Our Kume experience wouldn’t
+of broken Japanese and random Google Translates. Our Kume experience wouldn't
 have been the same without him!
 
-{{< tip >}} Most places in Kumejima close super early — like, 7PM early. Always
-have backup snacks, or make a friend who owns a bar. {{< /tip >}}
+{{<admonition "tip" >}}
+
+Most places in Kumejima close super early — like, **7PM early**. Always have
+backup snacks, or make a friend who owns a bar.
+
+{{</admonition>}}
 
 ### Kumejima Adventure Continue: The Next Day
 
@@ -208,6 +212,6 @@ Definitely take advantage of that. 😉
 - We stayed in: **Bears Stay Kumejima Eef Beach**
   - Very close to the Family Mart + Local resturant & bar
   - The rooms where very big
-  - No reception. all the check-in happend in front of a machine, so you cannot
+  - No reception. All the check-in happend in front of a machine, so you cannot
     check in early
   - The cleaning lady was very nice and she gave us extra towels for the beach!
