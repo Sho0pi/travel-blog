@@ -173,7 +173,7 @@ to the Okinawa main island.
 
 We honestly loved every second of being in Kume. Our 1.5 days were definitely
 not enough - I wish we had at least 2 more days to explore the island properly.
-Maybe even go SUP paddling with Kairi like we talked about.
+Maybe even go SUP and Snorkeling with Kairi like we talked about.
 
 This island just felt different. We met some of the nicest people we've ever met
 in Japan, and the vibe overall was super welcoming and laid-back. Great weather,
