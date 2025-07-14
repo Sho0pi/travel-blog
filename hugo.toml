@@ -1,4 +1,4 @@
-baseURL = 'https://sho0pi.github.io/travel/'
+baseURL = 'https://itay.world/'
 
 # This will make the URL in themes when accessing '/...' transform to 'baseURL/...'
 canonifyURLs = true
@@ -6,7 +6,7 @@ canonifyURLs = true
 # theme = "ananke"
 theme = "LoveIt"
 
-title = "SDGM"
+title = "Itay's World"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -70,7 +70,7 @@ enableEmoji = true
 
 [params]
   # site default theme ["auto", "light", "dark"]
-  defaultTheme = "dartk"
+  defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   gitRepo = ""
   # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
@@ -114,7 +114,7 @@ enableEmoji = true
     # LoveIt NEW | 0.2.0 Header title config
     [params.header.title]
       # title name
-      name = "SDGM"
+      name = "Itay's World"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = """<i class="fas fa-passport"></i>"""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -195,7 +195,7 @@ enableEmoji = true
       # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "Stupid Decisions - Great Memories"
+      subtitle = "My Crazy, Stupid and Exiting Travel Stories"
 
       # whether to use typeit animation for subtitle
       typeit = false
@@ -209,9 +209,9 @@ enableEmoji = true
       enable = true
       # special amount of posts in each home posts page
       paginate = 6
+
       # # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
       # # default behavior when you don't set "hiddenFromHomePage" in front matter
-      defaultHiddenFromHomePage = false
 
   [params.social]
     GitHub = "Sho0pi"
@@ -220,6 +220,7 @@ enableEmoji = true
     RSS = true
 
   [params.page]
+      hiddenFromHomePage = false
 [params.page.share]
       enable = true
       X = true 
@@ -253,7 +254,6 @@ enableEmoji = true
 
 # Options to make hugo output files
 [outputs]
-  # LoveIt CHANGED | 0.2.0
   home = ["HTML", "RSS", "JSON"]
 
 
@@ -282,7 +282,6 @@ enableEmoji = true
 
 
 [params.analytics]
-    # LoveIt DELETED | 0.3.1
     enable = true
     # Google Analytics
     [params.analytics.google]
