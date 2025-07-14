@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://sho0pi.github.io/sitemap.xml
+Sitemap: https://itay.world/sitemap.xml
