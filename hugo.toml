@@ -285,7 +285,10 @@ enableEmoji = true
     enable = true
     # Google Analytics
     [params.analytics.google]
-      id = "G-HKVJHNJ0JD"
+      id = "G-XW6GDC6QQT"
+
+      # whether to respect the browser’s “do not track” setting
+      respectDoNotTrack = true
 
 
 
