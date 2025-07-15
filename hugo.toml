@@ -274,7 +274,7 @@ enableEmoji = true
         emitMetadata = "0"
         inputPosition = "bottom"
         lazyLoading = true
-        lightTheme = "catppuccin_latte""
+        lightTheme = "catppuccin_latte"
         darkTheme = "catppuccin_frappe"
 
 
