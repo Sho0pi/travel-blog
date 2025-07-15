@@ -43,7 +43,7 @@ wanted to give it a try.
 And let me tell you - **it was a great success.** In just 30 hours, we managed
 to hitchhike with 6 different people!
 
-{{<img src="first-hitchike.jpg" caption="First hitchhike - with a marine biologist who was on our flight">}}
+{{<image src="first-hitchike.jpg" caption="First hitchhike - with a marine biologist who was on our flight">}}
 
 ### Snorkeling in Paradise
 
@@ -89,7 +89,7 @@ We spent the next two hours walking around in the water, trying to get close to
 the turtles without scaring them off. But every time they noticed us, they
 zoomed away - I had no idea turtles could swim that fast.
 
-{{<img src="beach1.jpg" caption="The beach across the road from our hotel">}}
+{{<image src="beach1.jpg" caption="The beach across the road from our hotel">}}
 
 After that, we were completely dead. We hitchhiked back with a Japanese guy who
 didn't know a single word of English, but he somehow dropped us off exactly at
@@ -129,7 +129,7 @@ Japanese trucks you only see in rural Japan or in the movies. Not the most
 comfortable ride, but honestly... it was amazing. The wind in your face, ocean
 views all around - we couldn't ask for a better experience.
 
-{{<img src="truck.jpg" caption="Amazing experience">}}
+{{<image src="truck.jpg" caption="Amazing experience">}}
 
 The driver dropped us off at the abandoned Kumejima Museum (guess we were
 traveling in the off-season), and we started walking east along the coastline.
@@ -167,7 +167,7 @@ back in one last time to explore the reef a bit more. I wish we had more time to
 fully explore it... but we had to head back to the airport for our flight back
 to the Okinawa main island.
 
-{{<img src="beach2.jpg" caption="The coastlines between two of the small islands in Kume">}}
+{{<image src="beach2.jpg" caption="The coastlines between two of the small islands in Kume">}}
 
 ### Final Thoughts from Kume
 
