@@ -1,7 +1,7 @@
 baseURL = 'https://itay.world/'
 
 # This will make the URL in themes when accessing '/...' transform to 'baseURL/...'
-canonifyURLs = true
+canonifyURLs = false
 
 # theme = "ananke"
 theme = "LoveIt"
