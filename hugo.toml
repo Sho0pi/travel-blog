@@ -86,7 +86,7 @@ enableEmoji = true
   images = ["profile.jpg"]
 
   [params.app]
-    title = "SDGM"
+    title = "Itay's World"
     noFavicon = false
     svgFavicon = ""
     # Android browser theme color
@@ -94,10 +94,10 @@ enableEmoji = true
     themeColor = "#ffffff"
     # Safari mask icon color
     # Safari 图标颜色
-    iconColor = "#5bbad5"
+    iconColor = "#569ADA"
     # Windows v8-11 tile color
     # Windows v8-11 磁贴颜色
-    tileColor = "#da532c"
+    tileColor = "#569ADA"
 
   # Author config
   [params.author]
@@ -263,19 +263,19 @@ enableEmoji = true
   [params.page.comment.giscus]
         # You can refer to the official documentation of giscus to use the following configuration.
         enable = true
-        repo = "sho0pi/sho0pi.github.io"
-        repoId = "R_kgDOPFBevA"
+        repo = "sho0pi/travel-blog"
+        repoId = "R_kgDOPFBdhA"
         category = "General"
-        categoryId = "DIC_kwDOPFBevM4CssXX"
+        categoryId = "DIC_kwDOPFBdhM4Cs-o7"
         # automatically adapt the current theme i18n configuration when empty
         lang = ""
         mapping = "pathname"
         reactionsEnabled = "1"
         emitMetadata = "0"
         inputPosition = "bottom"
-        lazyLoading = false
-        lightTheme = "light"
-        darkTheme = "dark"
+        lazyLoading = true
+        lightTheme = "catppuccin_latte""
+        darkTheme = "catppuccin_frappe"
 
 
 
