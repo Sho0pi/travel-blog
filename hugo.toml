@@ -259,9 +259,31 @@ enableEmoji = true
 [params.page.comment]
       enable = true
 
+  [params.page.comment.valine]
+        enable = true
+        appId = "4cUtSaTkEwjqonUtgL99YUas-MdYXbMMI"
+        appKey = "0FwOupuCe6k649DNphxhVtrW"
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        # automatically adapt the current theme i18n configuration when empty
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = "https://4cutsatk.api.lncldglobal.com"
+        # LoveIt NEW | 0.2.6 emoji data file name, default is "google.yml"
+        # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+        # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
+        # you can store your own data files in the same path under your project:
+        # "assets/lib/valine/emoji/"
+        # emoji = ""
+
   [params.page.comment.giscus]
         # You can refer to the official documentation of giscus to use the following configuration.
-        enable = true
+        enable = false
         repo = "sho0pi/travel-blog"
         repoId = "R_kgDOPFBdhA"
         category = "General"
