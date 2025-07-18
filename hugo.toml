@@ -264,11 +264,9 @@ enableEmoji = true
         appId = "4cUtSaTkEwjqonUtgL99YUas-MdYXbMMI"
         appKey = "0FwOupuCe6k649DNphxhVtrW"
         placeholder = ""
-        avatar = "mp"
+        avatar = "retro"
         meta= ""
         pageSize = 10
-        # automatically adapt the current theme i18n configuration when empty
-        lang = ""
         visitor = true
         recordIP = true
         highlight = true
