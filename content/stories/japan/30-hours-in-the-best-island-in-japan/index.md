@@ -6,8 +6,10 @@ slug: "30-hours-in-kumejima"
 resources:
 - name: "featured-image"
   src: "cover.jpg"
-location: "Kumejima, Japan"
-travel_time: "30 hours"
+when: "June 2025"
+where: "Kumejima, Japan"
+map_link: "https://maps.app.goo.gl/AZZVXA4qYEoftx19A"
+duration: "30 hours"
 tags:
   - Japan
   - Okinawa
