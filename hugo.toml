@@ -70,7 +70,7 @@ enableEmoji = true
 
 [params]
   # site default theme ["auto", "light", "dark"]
-  defaultTheme = "dark"
+  defaultTheme = "light"
   # public git repo url only then enableGitInfo is true
   gitRepo = ""
   # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
@@ -207,7 +207,7 @@ enableEmoji = true
     [params.home.posts]
       enable = true
       # special amount of posts in each home posts page
-      paginate = 6
+      paginate = 4
 
       # # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
       # # default behavior when you don't set "hiddenFromHomePage" in front matter
