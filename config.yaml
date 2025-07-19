@@ -126,6 +126,10 @@ params:
           - nick
           - mail
         serverURLs: https://4cutsatk.api.lncldglobal.com
+      waline:
+        enable: true
+        serverURL: https://4cutsatk.api.lncldglobal.com
+        login: "disable"
 ###########################
 
 ###########################
