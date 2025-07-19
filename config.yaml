@@ -1,0 +1,150 @@
+baseURL: https://itay.world/
+title: Itay's World
+languageCode: en
+
+# This will make the URL in themes when accessing '/...' transform to 'baseURL/...'
+canonifyURLs: false
+
+# Import the FixIt theme
+module:
+  imports:
+    - path: github.com/hugo-fixit/FixIt
+
+# Theme Configuartion
+params:
+  defaultTheme: light
+  title: Sho0pi around the world
+  # SEO stuff:
+  description: Crazy stories and guides from all corners of the planet
+  keywords:
+    - Itay Blokh
+    - Blog
+    - Shoopi
+    - Travel Blog
+  images:
+    - profile.jpg
+  enablePWA: true
+  author:
+    name: Sho0pi
+    link: https://github.com/Sho0pi
+    avatar: https://github.com/sho0pi.png
+  app:
+    iconColor: "#0094ff"
+    tileColor: "#0094ff"
+    themeColor:
+      light: "#f8f8f8"
+      dark: "#252627"
+  # Fuse should be the fastest search engine
+  search:
+    enable: true
+    # TODO: help configure the search in the outputs
+    type: fuse
+
+  ###### HEADER + FOOTER ######
+  header:
+    desktopMode: normal
+    mobileMode: auto
+    title:
+      logo: /me.png
+      name: Itay's World
+  footer:
+    enable: true
+    copyright: true
+    author: true
+    since: 2025
+    license: <a rel="license external nofollow noopener noreffer"
+      href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC
+      BY-NC 4.0</a>
+    powered:
+      enable: false
+  #############################
+
+  # Enable cause why not?
+  breadcrumb:
+    enable: true
+
+  # IDONT KNOW WHAT IS THAT
+  tagcloud:
+    enable: true
+
+  ###### PROFILE CONFIG ######
+  home:
+    profile:
+      enable: true
+      avatarURL: /profile.jpg
+      subtitle: My Crazy, Stupid, and Exciting Adventures Around the World
+      typeit: false
+      disclaimer: העמיקו להתבונן בטבע ותבינו הכל טוב יותר - שלו שרעבי ז"ל
+  social:
+    GitHub: Sho0pi
+    Instagram: itay.png
+    Linkedin: sho0pi
+  #############################
+
+  # Site counter
+  busuanzi:
+    enable: true
+    siteViews: false
+    pageViews: true
+
+  # Google analytics
+  analytics:
+    enable: true
+    google:
+      id: "G-XW6GDC6QQT"
+      anonymizeIP: false
+    umami:
+      data_website_id: 2be00ed3-5139-4e12-94b3-f0e1695a56c5
+      src: https://cloud.umami.is/script.js
+      data_host_url: ""
+      data_domains: ""
+  cookieconsent:
+    enable: false
+
+  # Progress and keys:
+  backToTop:
+    enable: true
+    scrollpercent: true
+  readingProgress:
+    enable: true
+
+  # Image optimization:
+  image:
+    cacheRemote: true
+    optimise: true
+
+  # Comments
+  page:
+    comment:
+      enable: true
+      valine:
+        enable: true
+        appId: 4cUtSaTkEwjqonUtgL99YUas-MdYXbMMI
+        appKey: 0FwOupuCe6k649DNphxhVtrW
+        avatar: robohash
+        meta:
+          - nick
+          - mail
+        serverURLs: https://4cutsatk.api.lncldglobal.com
+###########################
+
+###########################
+# Make FixIt work better:
+markup:
+  _merge: shallow
+  highlight:
+    codeFences: true
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+outputs:
+  _merge: shallow
+  home:
+    - html
+    - rss
+    - archives
+    - offline
+    - search
+taxonomies:
+  _merge: shallow
+###########################
