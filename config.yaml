@@ -118,18 +118,13 @@ params:
     comment:
       enable: true
       valine:
-        enable: false
+        enable: true
         appId: 4cUtSaTkEwjqonUtgL99YUas-MdYXbMMI
         appKey: 0FwOupuCe6k649DNphxhVtrW
         avatar: robohash
         meta:
           - nick
-          - mail
         serverURLs: https://4cutsatk.api.lncldglobal.com
-      waline:
-        enable: true
-        serverURL: https://4cutsatk.api.lncldglobal.com
-        login: "disable"
 ###########################
 
 ###########################
