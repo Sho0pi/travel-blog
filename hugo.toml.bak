@@ -3,9 +3,6 @@ baseURL = 'https://itay.world/'
 # This will make the URL in themes when accessing '/...' transform to 'baseURL/...'
 canonifyURLs = false
 
-# theme = "ananke"
-theme = "LoveIt"
-
 title = "Itay's World"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
@@ -13,33 +10,18 @@ languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 
+# Import the module
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-fixit/FixIt"
 
-
-# copyright description used only for seo schema
-copyright = ""
-
-# whether to use robots.txt
-enableRobotsTXT = true
-# whether to use git commit log
-enableGitInfo = true
-# whether to use emoji code
-enableEmoji = true
-
-# ignore some build errors
-# ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
-
-# Pagination config
-# [pagination]
-#   disableAliases = false
-#   pagerSize = 10
-#   path = "page"
 
 
 # Menu config
 [menu]
   [[menu.main]]
     weight = 1
-    identifier = "stories"
+    # identifier = "stories"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
@@ -48,6 +30,8 @@ enableEmoji = true
     url = "/stories/"
     # title will be shown when you hover on this menu link
     title = "My amazing Stories"
+  [menu.main.params]
+      icon = "fa-solid fa-book-open"
   [[menu.main]]
     weight = 2
     identifier = "guides"
@@ -71,33 +55,19 @@ enableEmoji = true
 [params]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "light"
-  # public git repo url only then enableGitInfo is true
-  gitRepo = ""
-  # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
-  # ["sha256", "sha384", "sha512", "md5"]
-  fingerprint = ""
-  # LoveIt NEW | 0.2.0 date format
-  dateFormat = "2006-01-02"
-  # website title for Open Graph and Twitter Cards
-  title = "Sho0pi around the world"
+
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Crazy stories and guides from all corners of the planet"
+  # keywords for the SEO
+  keywords = ["Itay Blokh", "Blog", "Shoopi", "Travel Blog"]
+
+  # website title for Open Graph and Twitter Cards
+  title = "Sho0pi around the world"
   # website images for Open Graph and Twitter Cards
   images = ["profile.jpg"]
-
-  [params.app]
-    title = "Itay's World"
-    noFavicon = false
-    svgFavicon = ""
-    # Android browser theme color
-    # Android 浏览器主题色
-    themeColor = "#ffffff"
-    # Safari mask icon color
-    # Safari 图标颜色
-    iconColor = "#569ADA"
-    # Windows v8-11 tile color
-    # Windows v8-11 磁贴颜色
-    tileColor = "#569ADA"
+  
+  # Enable pwa for mobile apps
+  enablePWA = true
 
   # Author config
   [params.author]
@@ -105,80 +75,49 @@ enableEmoji = true
     email = ""
     link = "http://github.com/Sho0pi"
 
+
+  [params.app]
+    # Safari mask icon color
+    iconColor = "#569ADA"
+    # Windows v8-11 tile color
+    tileColor = "#569ADA"
+    [params.app.themeColor]
+      light = "#f8f8f8"
+      dark = "#252627"
+
+  # Search config
+  [params.search]
+    enable = true
+    # type of search engine 
+    type = "fuse"
+    # TODO: help configure the search in the outputs
+
   # Header config
   [params.header]
-    # desktop header mode ["fixed", "normal", "auto"]
-    desktopMode = "fixed"
-    # mobile header mode ["fixed", "normal", "auto"]
+    # desktop/mobile header mode ["sticky", "normal", "auto"]
+    desktopMode = "normal"
     mobileMode = "auto"
-    # LoveIt NEW | 0.2.0 Header title config
+
     [params.header.title]
+      logo="/me.png"
       # title name
       name = "Itay's World"
-      # you can add extra information before the name (HTML format is supported), such as icons
-      pre = """<i class="fas fa-passport"></i>"""
       # you can add extra information after the name (HTML format is supported), such as icons
-      post = """<img src="/me.png" style="height:1.25em; width:auto; vertical-align:middle;">"""
-      # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
-      typeit = false
+      # post = """<img src="/me.png" style="height:1.25em; width:auto; vertical-align:middle;">"""
+
+  [params.breadcrumb]
+    # Enable cause why not?
+    enable=true
 
   # Footer config
   [params.footer]
     enable = true
-    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
-    custom = ''
-    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
-    hugo = false
-    # LoveIt NEW | 0.2.0 whether to show copyright info
     copyright = true
-    # LoveIt NEW | 0.2.0 whether to show the author
     author = true
-    # Site creation time
     since = 2025
-    # ICP info only in China (HTML format is supported)
-    icp = ""
-    # license /info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-
-  # LoveIt NEW | 0.2.0 Section (all posts) page config
-  [params.section]
-    # special amount of posts in each section page
-    paginate = 20
-    # date format (month and day)
-    dateFormat = "01-02"
-    # amount of RSS pages
-    rss = 10
-
-  # LoveIt NEW | 0.2.0 List (category or tag) page config
-  [params.list]
-    # special amount of posts in each list page
-    paginate = 20
-    # date format (month and day)
-    dateFormat = "01-02"
-    # amount of RSS pages
-    rss = 10
-
-  # LoveIt NEW | 0.2.0 Search config
-  [params.search]
-    enable = true
-    # type of search engine ["lunr", "algolia"]
-    type = "lunr"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = ""
-    # LoveIt NEW | 0.2.1 max number of results length
-    maxResultLength = 10
-    # LoveIt NEW | 0.2.3 snippet length of the result
-    snippetLength = 30
-    # LoveIt NEW | 0.2.1 HTML tag name of the highlight part in results
-    highlightTag = "em"
-    # LoveIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
-    [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+    [params.footer.powered]
+      enable = false
 
   # Home page config
   [params.home]
@@ -252,8 +191,8 @@ enableEmoji = true
 
 
 # Options to make hugo output files
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+# [outputs]
+#   home = ["HTML", "RSS", "JSON"]
 
 
 [params.page.comment]
@@ -311,20 +250,3 @@ enableEmoji = true
 
 
 
-
-
-
-
-
-# [[module.mounts]]
-# source = 'images'
-# target = 'static/images'
-
-
-
-# # Markup related configuration in Hugo
-# [markup]
-#   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-#   [markup.highlight]
-#     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-#     noClasses = false
