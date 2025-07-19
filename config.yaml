@@ -118,7 +118,7 @@ params:
     comment:
       enable: true
       valine:
-        enable: true
+        enable: false
         appId: 4cUtSaTkEwjqonUtgL99YUas-MdYXbMMI
         appKey: 0FwOupuCe6k649DNphxhVtrW
         avatar: robohash
