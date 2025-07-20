@@ -13,9 +13,11 @@ enableGitInfo: true
 module:
   imports:
     - path: github.com/hugo-fixit/FixIt
+    - path: github.com/hugo-fixit/cmpt-flyfish
 
 # Theme Configuartion
 params:
+  version: v0.4.0-alpha
   defaultTheme: light
   title: Sho0pi around the world
   # SEO stuff:
@@ -85,11 +87,11 @@ params:
     Linkedin: sho0pi
     dev:
       id: "https://dev.itay.world"
-      weight: 1
+      weight: 100
       Template: "%v"
       Title: "Sho0pi Dev"
       icon:
-        Src: "https://dev.itay.world/favicon.svg"
+        Src: https://dev.itay.world/favicon.svg
   #############################
 
   # Site counter
@@ -136,6 +138,15 @@ params:
         meta:
           - nick
         serverURLs: https://4cutsatk.api.lncldglobal.com
+
+  # # FISHH
+  customPartials:
+    assets:
+      - inject/cmpt-flyfish.html
+  flyfish:
+    enable: true
+    light: rgb(0 119 190 / 10%)
+    dark: rgb(255 255 255 / 10%)
 ###########################
 
 ###########################
