@@ -1,0 +1,10 @@
+baseURL: https://itay.world/
+title: Itay's World
+languageCode: en
+
+# This will make the URL in themes when accessing '/...' transform to 'baseURL/...'
+canonifyURLs: false
+
+enableRobotsTXT: true
+enableEmoji: true
+enableGitInfo: true

@@ -1,0 +1,7 @@
+_merge: shallow
+home:
+  - html
+  - rss
+  - archives
+  - offline
+  - search

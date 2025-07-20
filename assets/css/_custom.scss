@@ -1,0 +1,24 @@
+:root {
+  --grid-line-color: rgba(60, 10, 30, .04);
+}
+
+
+.home {
+  &.posts {
+    .home-avatar img {
+      width: 16rem;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 680px) {
+  .home {  
+    &.posts {
+      .home-avatar img {
+        width: 10rem;
+      }
+    }
+  }
+}
