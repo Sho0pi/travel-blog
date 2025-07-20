@@ -20,6 +20,6 @@ started
 
 ---
 
-> Author: <no value>  
+> Author: [Sho0pi](https://github.com/Sho0pi)  
 > URL: https://itay.world/guides/thailand/best-beacher-in-kophangan/  
 
