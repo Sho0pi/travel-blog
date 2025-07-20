@@ -1,0 +1,26 @@
+main:
+  - weight: 1
+    pre: ""
+    post: ""
+    name: Stories
+    url: /stories/
+    title: My amazing Stories
+    params:
+      icon: fa-solid fa-book-atlas
+  - weight: 2
+    identifier: guides
+    name: Guides
+    url: /guides/
+    title: My Travel Guides
+    params:
+      icon: fa-solid fa-brain
+  - weight: 3
+    identifier: tags
+    name: Tags
+    url: /tags/
+    title: ""
+  - weight: 4
+    identifier: categories
+    name: Categories
+    url: /categories/
+    title: ""
