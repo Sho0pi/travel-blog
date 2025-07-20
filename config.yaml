@@ -5,6 +5,10 @@ languageCode: en
 # This will make the URL in themes when accessing '/...' transform to 'baseURL/...'
 canonifyURLs: false
 
+enableRobotsTXT: true
+enableEmoji: true
+enableGitInfo: true
+
 # Import the FixIt theme
 module:
   imports:
@@ -79,6 +83,13 @@ params:
     GitHub: Sho0pi
     Instagram: itay.png
     Linkedin: sho0pi
+    dev:
+      id: "https://dev.itay.world"
+      weight: 1
+      Template: "%v"
+      Title: "Sho0pi Dev"
+      icon:
+        Src: "https://dev.itay.world/favicon.svg"
   #############################
 
   # Site counter
