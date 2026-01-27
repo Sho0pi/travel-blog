@@ -1,4 +1,4 @@
-version: v0.4.0-alpha
+version: v0.4.2
 defaultTheme: light
 title: Sho0pi around the world
 # SEO stuff:
@@ -93,7 +93,7 @@ analytics:
     data_host_url: ""
     data_domains: ""
 cookieconsent:
-  enable: false
+  enable: true
 
 # Progress and keys:
 backToTop:
