@@ -57,13 +57,9 @@
       {{- /* TODO add disclaimer or space between meta and content */ -}}
         <div class="post-meta-line" style="display: flex; justify-content: space-between; align-items: center;">
 
+
+          {{- /* last mod */ -}}
           <div>
-          {{- with .PublishDate | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
-            <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.PublishDate.Format) | T "single.publishedOnDate" }}">
-              {{- dict "Class" "fa-solid fa-calendar-days me-1" | partial "plugin/icon.html" -}}
-              {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
-            </span>&nbsp;
-          {{- end -}}
           {{- if (ne .Lastmod.Unix .PublishDate.Unix) | and $params.showLastmod -}}
             {{- with .Lastmod | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
               <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.Lastmod.Format) | T "single.updatedOnDate" }}">
@@ -71,8 +67,18 @@
                 {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
               </span>&nbsp;
             {{- end -}}
+          {{- else -}}
+            {{- with .PublishDate | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
+              <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.PublishDate.Format) | T "single.publishedOnDate" }}">
+                {{- dict "Class" "fa-solid fa-calendar-days me-1" | partial "plugin/icon.html" -}}
+                {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
+              </span>&nbsp;
+            {{- end -}}
           {{- end -}}
           </div>
+
+
+
 
           <div>
           {{- if $params.wordCount -}}
@@ -89,14 +95,6 @@
           {{- end -}}
           </div>
 
-        {{- /* If the article expires, close the comment or not */ -}}
-        {{- $expirationReminder := $params.expirationReminder | default dict -}}
-        {{- if
-          $expirationReminder.enable
-          | and (gt (div (sub now.Unix .Lastmod.Unix) 86400) ($expirationReminder.warning | default 180))
-          | and $expirationReminder.closeComment -}}
-          {{- .Store.Set "commentExpired" true -}}
-        {{- end -}}
         {{- $comment := .Store.Get "comment" | default dict -}}
         {{- $visitorIcon := dict "Class" "fa-regular fa-eye me-1" | partial "plugin/icon.html" -}}
         {{- $commentIcon := dict "Class" "fa-regular fa-comments me-1" | partial "plugin/icon.html" -}}
@@ -129,24 +127,6 @@
         {{- /* Location + Duration */ -}}
         <div class="post-meta-line" style="display: flex; justify-content: space-between; align-items: center;">
 
-            <!--  Left: Location -->
-            <div>
-                {{- with .Params.where -}}
-                <i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>&nbsp;{{ . }}
-                {{- end -}}
-            </div>
-
-            <!--  Right: When - Duration -->
-            <div style="text-align: right;">
-                {{- if or .Params.when .Params.duration -}}
-                <i class="fas fa-calendar-day fa-fw" aria-hidden="true"></i>&nbsp;
-                <span>
-                    {{- with .Params.when }}{{ . }}{{ end -}}
-                    {{- if and .Params.when .Params.duration }}&nbsp;-&nbsp;{{ end -}}
-                    {{- with .Params.duration }}for {{ . }}{{ end -}}
-                </span>
-                {{- end -}}
-            </div>
 
         </div>
 
