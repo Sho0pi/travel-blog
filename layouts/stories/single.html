@@ -1,6 +1,9 @@
 {{- define "title" -}}
   {{- cond (.Param "capitalizeTitles") (title .Title) .Title -}}
-  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
+  {{- if .Site.Params.withSiteTitle }}
+    {{ .Site.Params.titleDelimiter }}
+    {{ .Site.Title }}
+  {{- end -}}
 {{- end -}}
 
 {{- define "content" -}}
@@ -12,7 +15,11 @@
   {{- .Store.Set "showToc" $showToc -}}
   {{- $tableOfContents = dict "Content" $tableOfContents "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
 
-  <aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="{{ T "collections" }}">
+
+  <aside
+    class="aside-collection animate__animated animate__fadeIn animate__faster"
+    aria-label="{{ T "collections" }}"
+  >
     {{- /* Collection List */ -}}
     {{- partial "single/collection-list.html" . -}}
 
@@ -23,7 +30,10 @@
     {{- block "custom-aside" . }}{{ end -}}
   </aside>
 
-  <article class="page single"{{ with .Params.fromAdapters }} data-adapters="{{ . }}"{{ end }}>
+  <article
+    class="page single"
+    {{ with .Params.fromAdapters }}data-adapters="{{ . }}"{{ end }}
+  >
     <div class="header">
       {{- /* Title */ -}}
       <h1 class="single-title animate__animated animate__flipInX">
@@ -35,7 +45,9 @@
             {{- if hasPrefix .Url "http" -}}
               {{ dict "Destination" .Url "Icon" $icon "Class" "icon-repost" "Title" $iconTitle | partial "plugin/link.html" -}}
             {{- else -}}
-              <span title="{{ $iconTitle }}" class="icon-repost">{{- $icon | partial "plugin/icon.html" -}}</span>
+              <span title="{{ $iconTitle }}" class="icon-repost"
+                >{{- $icon | partial "plugin/icon.html" -}}</span
+              >
             {{- end -}}
           {{- end -}}
         {{- end -}}
@@ -43,98 +55,19 @@
       </h1>
 
       {{- /* Subtitle */ -}}
-      {{- with $params.subtitle -}}<p class="single-subtitle animate__animated animate__fadeIn">{{ . | $.RenderString }}</p>{{- end -}}
+      {{- with $params.subtitle -}}
+        <p class="single-subtitle animate__animated animate__fadeIn">
+          {{ . | $.RenderString }}
+        </p>
+      {{- end -}}
     </div>
 
     {{- /* Meta */ -}}
     <div class="post-meta">
-      <!-- <div class="post-meta-line"> -->
-      <!--   {{- partial "single/post-author.html" . -}} -->
-      <!--   {{- partial "single/post-included-in.html" . -}} -->
-      <!-- </div> -->
+      {{- partial "stories/lastmod.html" . -}}
 
-
-      {{- /* TODO add disclaimer or space between meta and content */ -}}
-        <div class="post-meta-line" style="display: flex; justify-content: space-between; align-items: center;">
-
-
-          {{- /* last mod */ -}}
-          <div>
-          {{- if (ne .Lastmod.Unix .PublishDate.Unix) | and $params.showLastmod -}}
-            {{- with .Lastmod | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
-              <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.Lastmod.Format) | T "single.updatedOnDate" }}">
-                {{- dict "Class" "fa-regular fa-calendar-check me-1" | partial "plugin/icon.html" -}}
-                {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
-              </span>&nbsp;
-            {{- end -}}
-          {{- else -}}
-            {{- with .PublishDate | dateFormat (.Site.Params.dateformat | default "2006-01-02") -}}
-              <span title="{{ dict "Date" ("2006-01-02 15:04:05" | $.PublishDate.Format) | T "single.publishedOnDate" }}">
-                {{- dict "Class" "fa-solid fa-calendar-days me-1" | partial "plugin/icon.html" -}}
-                {{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
-              </span>&nbsp;
-            {{- end -}}
-          {{- end -}}
-          </div>
-
-
-
-
-          <div>
-          {{- if $params.wordCount -}}
-            <span title="{{ T "single.wordCount" .WordCount }}">
-              {{- dict "Class" "fa-solid fa-pencil-alt me-1" | partial "plugin/icon.html" -}}
-              {{- T "single.fuzzyWordCount" .FuzzyWordCount -}}
-            </span>&nbsp;
-          {{- end -}}
-          {{- if $params.readingTime -}}
-            <span>
-              {{- dict "Class" "fa-regular fa-clock me-1" | partial "plugin/icon.html" -}}
-              {{- T "single.readingTime" .ReadingTime -}}
-            </span>&nbsp;
-          {{- end -}}
-          </div>
-
-        {{- $comment := .Store.Get "comment" | default dict -}}
-        {{- $visitorIcon := dict "Class" "fa-regular fa-eye me-1" | partial "plugin/icon.html" -}}
-        {{- $commentIcon := dict "Class" "fa-regular fa-comments me-1" | partial "plugin/icon.html" -}}
-
-
-        {{- /* Visitor Count */ -}}
-        {{- if $comment.enable | and $comment.artalk.enable -}}
-          <span class="comment-visitors" data-flag-title="{{ $title }}">
-            {{- $visitorIcon }}<span class="artalk-visitor-count" data-page-key="{{ .RelPermalink }}">-</span>&nbsp;{{ T "single.views" }}
-          </span>&nbsp;
-        {{- else if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
-          <span id="{{ .RelPermalink }}" class="leancloud_visitors comment-visitors" data-flag-title="{{ $title }}">
-            {{- $visitorIcon }}<span class="leancloud-visitors-count">-</span>&nbsp;{{ T "single.views" }}
-          </span>&nbsp;
-        {{- else if $comment.enable | and $comment.waline.enable | and $comment.waline.pageview -}}
-          <span class="comment-visitors" data-flag-title="{{ $title }}">
-            {{- $visitorIcon }}<span data-path="{{ .RelPermalink }}" class="waline-pageview-count">-</span>&nbsp;{{ T "single.views" }}
-          </span>&nbsp;
-        {{- else if $comment.enable | and $comment.twikoo.enable | and $comment.twikoo.visitor -}}
-          <span id="{{ .RelPermalink }}" class="comment-visitors" data-flag-title="{{ $title }}">
-            {{- $visitorIcon }}<span id="twikoo_visitors">-</span>&nbsp;{{ T "single.views" }}
-          </span>&nbsp;
-        {{- else if .Site.Params.busuanzi.enable | and .Site.Params.busuanzi.pageViews | and hugo.IsProduction -}}
-          <span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="{{ $title }}">
-            {{- $visitorIcon }}<span id="busuanzi_value_page_pv">-</span>&nbsp;{{ T "single.views" }}
-          </span>&nbsp;
-        {{- end -}}
-      </div>
-
-        {{- /* Location + Duration */ -}}
-        <div class="post-meta-line" style="display: flex; justify-content: space-between; align-items: center;">
-
-
-        </div>
-
-    {{- partial "stories/location.html" . -}}
-
+      {{- partial "stories/location.html" . -}}
     </div>
-
-
 
     {{- /* Featured image */ -}}
     {{- $image := $params.featuredimage -}}
@@ -144,10 +77,10 @@
     {{- end -}}
     {{- if $image | or (gt (len $matches) 0) -}}
       <div class="featured-image">
-        {{- $optim := slice 
+        {{- $optim := slice
           (dict "Process" "resize 800x webp" "descriptor" "800w")
           (dict "Process" "resize 1200x webp" "descriptor" "1200w")
-          (dict "Process" "resize 1600x webp" "descriptor" "1600w") 
+          (dict "Process" "resize 1600x webp" "descriptor" "1600w")
         -}}
         {{- dict "Src" $image "Title" $.Description "Resources" .Resources "Matches" $matches "Loading" "eager" "Sizes" "(max-width: 680px) 100vw, (max-width: 960px) 80vw, (max-width: 1440px) 56vw, 800px" "OptimConfig" $optim | partial "plugin/image.html" -}}
       </div>
@@ -155,10 +88,20 @@
 
     {{- /* Static TOC */ -}}
     {{- if $showToc -}}
-      <div class="details toc{{ with $params.password }} encrypted-hidden{{ end }}" id="toc-static" data-kept="{{ if $toc.keepstatic }}true{{ else }}false{{ end }}">
+      <div
+        class="details toc{{ with $params.password }}encrypted-hidden{{ end }}"
+        id="toc-static"
+        data-kept="{{ if $toc.keepstatic }}
+          true
+        {{ else }}
+          false
+        {{ end }}"
+      >
         <div class="details-summary toc-title">
           <span>{{ T "single.contents" }}</span>
-          <span>{{ dict "Class" "details-icon fa-solid fa-angle-right" | partial "plugin/icon.html" }}</span>
+          <span
+            >{{ dict "Class" "details-icon fa-solid fa-angle-right" | partial "plugin/icon.html" }}</span
+          >
         </div>
         <div class="details-content toc-content" id="toc-content-static">
           {{- $tableOfContents -}}
@@ -180,7 +123,11 @@
 
     {{- /* Content */ -}}
     {{- $content := dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
-    <div class="content" id="content"{{ with $params.endFlag }} data-end-flag="{{ . }}"{{ end }}>
+    <div
+      class="content"
+      id="content"
+      {{ with $params.endFlag }}data-end-flag="{{ . }}"{{ end }}
+    >
       {{- if not $params.password -}}
         {{- $content -}}
       {{- end -}}
@@ -228,11 +175,16 @@
 
     {{- /* Auto TOC */ -}}
     {{- if $showToc -}}
-      <h2 class="toc-title{{ with $params.password }} encrypted-hidden{{ end }}">
+      <h2 class="toc-title{{ with $params.password }}encrypted-hidden{{ end }}">
         {{- T "single.contents" -}}&nbsp;
         {{- dict "Class" "toc-icon fa-solid fa-angle-down" | partial "plugin/icon.html" -}}
       </h2>
-      <div class="toc-content{{ if eq $toc.auto false }} always-active{{ end }}{{ with $params.password }} encrypted-hidden{{ end }}" id="toc-content-auto"></div>
+      <div
+        class="toc-content{{ if eq $toc.auto false }}
+          always-active
+        {{ end }}{{ with $params.password }}encrypted-hidden{{ end }}"
+        id="toc-content-auto"
+      ></div>
     {{- end -}}
 
     {{- /* Custom block after post toc */ -}}

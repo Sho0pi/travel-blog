@@ -1,19 +1,35 @@
-<div style="display: flex; justify-content: space-between; align-items: center;">
-<!--  Left: Location -->
-   <span>
-   {{- with .Params.where -}}
-   <i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>&nbsp;{{ . }}
-   {{- end -}}
-   </span>
-   <!--  Right: When - Duration -->
-   <span>
-   {{- if or .Params.when .Params.duration -}}
-   <i class="fas fa-calendar-day fa-fw" aria-hidden="true"></i>&nbsp;
-   <span>
-   {{- with .Params.when }}{{ . }}{{ end -}}
-   {{- if and .Params.when .Params.duration }}&nbsp;-&nbsp;{{ end -}}
-   {{- with .Params.duration }}for {{ . }}{{ end -}}
-   </span>
-   {{- end -}}
-   </span>
+<div style="display: flex; justify-content: space-between; align-items: center">
+  <span>
+    {{ with .Params.where }}
+      <i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>
+      {{ with $.Params.map_link }}
+        <a
+          href="{{ . }}"
+          target="_blank"
+          rel="noopener"
+          style="color: inherit; text-decoration: none;"
+        >
+          {{ $.Params.where }}
+        </a>
+      {{ else }}
+        {{ . }}
+      {{ end }}
+    {{ end }}
+  </span>
+  <!--  Right: When - Duration -->
+  <span>
+    {{- if or .Params.when .Params.duration -}}
+      <span>
+        {{- with .Params.when }}
+          {{ . }}
+        {{ end -}}
+        {{- if and .Params.when .Params.duration }}&nbsp;-&nbsp;{{ end -}}
+        {{- with .Params.duration }}
+          for
+          {{ . }}
+        {{ end -}}
+      </span>
+      <i class="fas fa-calendar-day fa-fw" aria-hidden="true"></i>
+    {{- end -}}
+  </span>
 </div>

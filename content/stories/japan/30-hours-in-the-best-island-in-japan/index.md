@@ -27,7 +27,7 @@ decision we made on this whole trip!
 
 <!--more-->
 
-{{<image src="plane.jpg" caption="Our tiny 40-seater airplane" >}}
+![airplane](plane.jpg?fill=1080x720 "Our tiny 40-seater airplane")
 
 We landed in Kumejima pretty early, around 11AM, and had a few hours to kill
 before hotel check-in - and to be honest, we really didn't know what to expect.
@@ -44,7 +44,7 @@ wanted to give it a try.
 And let me tell you - **it was a great success.** In just 30 hours, we managed
 to hitchhike with 6 different people!
 
-{{<image src="first-hitchike.jpg" caption="First hitchhike - with a marine biologist who was on our flight">}}
+![First Hitchihke](first-hitchike.jpg "First hitchhike - with a marine biologist who was on our flight")
 
 ### Snorkeling in Paradise
 
@@ -90,7 +90,7 @@ We spent the next two hours walking around in the water, trying to get close to
 the turtles without scaring them off. But every time they noticed us, they
 zoomed away - I had no idea turtles could swim that fast.
 
-{{<image src="beach1.jpg" caption="The beach across the road from our hotel">}}
+![beach1](beach1.jpg "The beach across the road from our hotel")
 
 After that, we were completely dead. We hitchhiked back with a Japanese guy who
 didn't know a single word of English, but he somehow dropped us off exactly at
@@ -130,7 +130,7 @@ Japanese trucks you only see in rural Japan or in the movies. Not the most
 comfortable ride, but honestly... it was amazing. The wind in your face, ocean
 views all around - we couldn't ask for a better experience.
 
-{{<image src="truck.jpg" caption="Amazing experience">}}
+![truck](truck.jpg?fit=1080x720 "Amazing experience")
 
 The driver dropped us off at the abandoned Kumejima Museum (guess we were
 traveling in the off-season), and we started walking east along the coastline.
@@ -168,7 +168,7 @@ back in one last time to explore the reef a bit more. I wish we had more time to
 fully explore it... but we had to head back to the airport for our flight back
 to the Okinawa main island.
 
-{{<image src="beach2.jpg" caption="The coastlines between two of the small islands in Kume">}}
+![beach2.jpg](beach2.jpg?height=720 "The coastlines between two of the small islands in Kume")
 
 ### Final Thoughts from Kume
 
