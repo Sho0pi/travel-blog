@@ -1,0 +1,8 @@
+en:
+  weight: 1    
+  languageCode: en
+  languageName: English
+zh-cn:
+  weight: 2
+  languageCode: zh-CN
+  languageName: 简体中文
