@@ -7,10 +7,6 @@ resources:
     src: "cover.jpg"
 ---
 
-![cover](cover.jpg)
-
-{{< gallery match="*.jpg">}}
-
 # Why I left Hong Kong:
 
 I lived for about 1 year in Hong Kong. This was an amazing yet very chaotic
