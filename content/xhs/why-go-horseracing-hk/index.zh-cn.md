@@ -2,6 +2,13 @@
 date: "2026-05-09T13:25:41+08:00"
 draft: false
 title: "在香港一定要去看一次赛马"
+description: ""
+tags: []
+categories:
+  - 小红书
+resources:
+  - name: "featured-image"
+    src: "cover.jpg"
 ---
 
 # 在香港一定要去看一次赛马🐴🇭🇰

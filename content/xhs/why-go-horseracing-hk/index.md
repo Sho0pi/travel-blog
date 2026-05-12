@@ -1,7 +1,14 @@
 ---
+title: "Why you have to go see horse racing while you are in Hong Kong"
 date: "2026-05-09T13:25:41+08:00"
 draft: false
-title: "Why you have to go see horse racing while you are in Hong Kong"
+description: ""
+tags: []
+categories:
+  - 小红书
+resources:
+  - name: "featured-image"
+    src: "cover.jpg"
 ---
 
 # Why you have to go see horse racing while you are in Hong Kong
