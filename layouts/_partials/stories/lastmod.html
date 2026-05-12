@@ -46,15 +46,7 @@
   {{- $commentIcon := dict "Class" "fa-regular fa-comments me-1" | partial "plugin/icon.html" -}}
 
   {{- /* Visitor Count */ -}}
-  {{- if $comment.enable | and $comment.artalk.enable -}}
-    <span class="comment-visitors" data-flag-title="{{ $title }}">
-      {{- $visitorIcon }}<span
-        class="artalk-visitor-count"
-        data-page-key="{{ .RelPermalink }}"
-        >-</span
-      >&nbsp;{{ T "single.views" }} </span
-    >&nbsp;
-  {{- else if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
+  {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
     <span
       id="{{ .RelPermalink }}"
       class="leancloud_visitors comment-visitors"
@@ -63,31 +55,9 @@
       {{- $visitorIcon }}<span class="leancloud-visitors-count">-</span
       >&nbsp;{{ T "single.views" }} </span
     >&nbsp;
-  {{- else if $comment.enable | and $comment.waline.enable | and $comment.waline.pageview -}}
+  {{- else -}}
     <span class="comment-visitors" data-flag-title="{{ $title }}">
-      {{- $visitorIcon }}<span
-        data-path="{{ .RelPermalink }}"
-        class="waline-pageview-count"
-        >-</span
-      >&nbsp;{{ T "single.views" }} </span
-    >&nbsp;
-  {{- else if $comment.enable | and $comment.twikoo.enable | and $comment.twikoo.visitor -}}
-    <span
-      id="{{ .RelPermalink }}"
-      class="comment-visitors"
-      data-flag-title="{{ $title }}"
-    >
-      {{- $visitorIcon }}<span id="twikoo_visitors">-</span
-      >&nbsp;{{ T "single.views" }} </span
-    >&nbsp;
-  {{- else if .Site.Params.busuanzi.enable | and .Site.Params.busuanzi.pageViews | and hugo.IsProduction -}}
-    <span
-      id="busuanzi_container_page_pv"
-      class="busuanzi_visitors comment-visitors"
-      data-flag-title="{{ $title }}"
-    >
-      {{- $visitorIcon }}<span id="busuanzi_value_page_pv">-</span
-      >&nbsp;{{ T "single.views" }} </span
-    >&nbsp;
+      {{- $visitorIcon }} 0 views
+    </span>
   {{- end -}}
 </div>
