@@ -1,7 +1,5 @@
 main:
   - weight: 1
-    pre: ""
-    post: ""
     name: Stories
     url: /stories/
     title: My amazing Stories
@@ -25,3 +23,10 @@ main:
     name: Categories
     url: /categories/
     title: ""
+  - weight: 5
+    identifier: xhs
+    pre: >
+      <i><img src="/xhs.png" alt="XHS" style="display: block;  width: 50px; height: 50px;"></i>
+    name: 
+    url: /xhs/
+    title: XiaoHongShu blog posts
